@@ -1,0 +1,8 @@
+# Yara-Med1 Wundexperten
+# https://www.yara-med1.de
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.yara-med1.de/sitemap.xml

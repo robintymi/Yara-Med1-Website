@@ -3,9 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yara-Med1 - Professionelle Wundversorgung durch zertifizierte Wundexperten. Hausbesuche, chronische Wunden, Verbandswechsel und Beratung.">
-  <meta name="keywords" content="Wundexperten, Wundversorgung, Hausbesuche, chronische Wunden, Dekubitus, Ulcus cruris, Verbandswechsel">
-  <title>Yara-Med1 - Wundexperten im Einsatz</title>
+
+  <!-- SEO Meta Tags -->
+  <title>Yara-Med1 – Zertifizierte Wundexperten | Professionelle Wundversorgung zu Hause</title>
+  <meta name="description" content="Yara-Med1 – Ihre zertifizierten Wundexperten (ICW). Professionelle Wundversorgung bei Ihnen zu Hause: Chronische Wunden, Dekubitus, Ulcus cruris, Verbandswechsel. Über 20 Jahre Erfahrung.">
+  <meta name="keywords" content="Wundexperten, Wundversorgung, Hausbesuche, chronische Wunden, Dekubitus, Ulcus cruris, diabetischer Fuß, Verbandswechsel, Wundmanagement, ICW zertifiziert, Wundbehandlung, Wundpflege, ambulante Wundversorgung">
+  <meta name="author" content="Yara-Med1 Wundexperten">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.yara-med1.de/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yara-med1.de/">
+  <meta property="og:title" content="Yara-Med1 – Zertifizierte Wundexperten | Wundversorgung zu Hause">
+  <meta property="og:description" content="Professionelle Wundversorgung durch zertifizierte Experten direkt bei Ihnen zu Hause. Über 20 Jahre Erfahrung. Kostenlose Erstberatung.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Yara-Med1 Wundexperten">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yara-Med1 – Zertifizierte Wundexperten">
+  <meta name="twitter:description" content="Professionelle Wundversorgung durch zertifizierte Experten direkt bei Ihnen zu Hause.">
+
+  <!-- Geo Meta Tags (local SEO) -->
+  <meta name="geo.region" content="DE">
+  <meta name="geo.placename" content="Deutschland">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
@@ -17,6 +39,78 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: Local Business (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Yara-Med1 Wundexperten",
+    "description": "Professionelle Wundversorgung durch zertifizierte Wundexperten (ICW). Hausbesuche für chronische Wunden, Dekubitus, Ulcus cruris und Verbandswechsel.",
+    "url": "https://www.yara-med1.de",
+    "telephone": "+49123456789",
+    "email": "info@yara-med1.de",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "medicalSpecialty": "Wound Care",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "ICW Zertifizierte Wundexperten"
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates"
+      },
+      "geoRadius": "50 km"
+    },
+    "priceRange": "Abrechnung über Krankenkassen",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Structured Data: WebSite (for search box) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Yara-Med1 Wundexperten",
+    "url": "https://www.yara-med1.de"
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://www.yara-med1.de/"
+      }
+    ]
+  }
+  </script>
 
   <script>
     tailwind.config = {
@@ -40,7 +134,7 @@
   <div class="min-h-full w-full overflow-auto bg-white">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50" aria-label="Hauptnavigation">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <!-- Logo -->
@@ -474,13 +568,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4">
+    <footer class="bg-gray-900 text-white py-12 px-4" role="contentinfo">
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div class="flex items-center gap-3 mb-4">
               <div class="w-10 h-10 bg-yara-red rounded-full flex items-center justify-center">
-                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
@@ -489,14 +583,14 @@
             <p class="text-gray-400 text-sm">Wundexperten im Einsatz – Professionelle Wundversorgung mit Herz und Kompetenz.</p>
           </div>
 
-          <div>
+          <nav aria-label="Footer-Navigation">
             <h4 class="font-bold mb-4 font-heading">Schnellzugriff</h4>
             <ul class="space-y-2 text-gray-400">
               <li><a href="#leistungen" class="hover:text-yara-red transition-colors">Leistungen</a></li>
               <li><a href="#ueber-uns" class="hover:text-yara-red transition-colors">Über uns</a></li>
               <li><a href="#kontakt" class="hover:text-yara-red transition-colors">Kontakt</a></li>
             </ul>
-          </div>
+          </nav>
 
           <div>
             <h4 class="font-bold mb-4 font-heading">Rechtliches</h4>
