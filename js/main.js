@@ -44,8 +44,7 @@
       );
 
       // Open default email client
-      // TODO: E-Mail-Adresse hier anpassen!
-      window.location.href = 'mailto:info@yara-med1.de?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:r.erike@yara-med1.de?subject=' + subject + '&body=' + body;
 
       // Show success message
       formSuccess.classList.remove('hidden');
