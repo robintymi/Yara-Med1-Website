@@ -29,13 +29,9 @@
   <meta name="geo.region" content="DE">
   <meta name="geo.placename" content="Deutschland">
 
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
-  <!-- Lokale Fonts (DSGVO-konform) -->
+  <!-- CSS (Tailwind lokal + Custom) -->
+  <link rel="stylesheet" href="css/tailwind.css">
   <link rel="stylesheet" href="css/fonts.css">
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon -->
@@ -120,23 +116,6 @@
   }
   </script>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'yara-red': '#C41E3A',
-            'yara-red-dark': '#9B1830',
-            'yara-red-light': '#E8354F'
-          },
-          fontFamily: {
-            'heading': ['Merriweather', 'serif'],
-            'body': ['Nunito', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body class="h-full font-body">
   <div class="min-h-full w-full overflow-auto bg-white">
@@ -610,7 +589,7 @@
         </div>
 
         <div class="border-t border-gray-800 pt-8 text-center">
-          <p class="text-gray-500 text-sm">&copy; 2025 Yara-Med1 Wundexperten. Alle Rechte vorbehalten.</p>
+          <p class="text-gray-500 text-sm">&copy; <script>document.write(new Date().getFullYear())</script> Yara-Med1 Wundexperten. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
